@@ -1,6 +1,6 @@
-*{
+/* *{
     background-color: rgb(0, 0, 0);
-}
+} */
 
 .quote {
     width: 1000px;
@@ -16,4 +16,14 @@
     margin: auto;
 
     padding : 100px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #73FEEE;
+    border-color: #73FEEE;
+    border-radius: 15px;
+}
+input {
+    border-radius: 15px;
 }
