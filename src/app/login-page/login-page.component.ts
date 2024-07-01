@@ -23,7 +23,9 @@ export class LoginPageComponent {
   }
 
   validate() {
+    localStorage.setItem('loggedInUser', "null");
     if (this.userId == "saikrishnatechno@gmail.com" && this.password == "quotepass") {
+      localStorage.setItem('loggedInUser', JSON.stringify({userId: this.userId, password: this.password}));
       this.login = true;
       this.router.navigate(['/'], { relativeTo: this.route });
     } else {
